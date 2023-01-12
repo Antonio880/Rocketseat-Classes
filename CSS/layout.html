@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px
+        }
+        .box1{
+            background-color: red;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-radius: 5px;
+            z-index: 4;
+            /*position: relative;/*top right bottom left z-index*/
+            /*left: 10px;*/ 
+        }
+        .box2{
+            background-color: blue;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+            z-index: 3;
+            /*position: absolute;/* Como se colocasse o objeto acima dos outros*/
+        }
+        .box3{
+            background-color: green;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            border-radius: 5px;
+            z-index: 2;
+            /*position: fixed;*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </main>
+</body>
+</html>
