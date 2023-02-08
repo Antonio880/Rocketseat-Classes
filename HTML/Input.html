@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Atributos:
+        Autocomplete
+        Autofocus
+        disable
+        value
+        readonly (Quase todos)
+        form (Quase todos)
+        name
+        required (Quase todos)
+        Placeholder(password, search, tel, text, url)
+        <form action="">
+            <input type="password" minlength="8" maxlength="12" size="12" pattern="[0-9a-zA-Z]{8,12}" title="Coloque no Mínimo 8 caracteres e no Máximo 12" placeholder="Coloque sua Senha" required autocomplete="new-password">Inputmode="Abre o teclado direto no teclado somente para números!"
+            <button type="submit">Enviar</button>
+        </form>
+        <form action="">
+            <input type="email" placeholder="Digite seu email" required minlength="5" maxlength="200" pattern=".+@gmail\.com\br" title="Somente email gmail.com.br">
+            <button type="submit">Enviar</button>
+        </form>
+        spellcheck-> Habilitar a verificaçã ortográfica para este input
+        <datalist id="url">
+            <option>https://meusite.com.br</option>
+        </datalist>
+        <form action="">
+            <input type="url" placeholder="https://example.com.br" pattern=".*\.com\.br.*" required list="url" spellcheck="true">
+            <button type="submit">Enviar</button>
+        </form>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" accept="image/*" multiple>
+        </form>
+        <input type="color" value="#ff0000" list="colors">
+        <datalist id="colors">
+            <option>#0000ff</option>
+        </datalist>
+        <fieldset>
+            <legend>Chosse your interests</legend>
+            <div>
+                <input type="checkbox" id="coding" name="interest" value="Coding" checked>
+                <label for="coding">Coding</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="interest" value="Music" checked>
+                <label for="music">Music</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Bora tomar café</legend>
+
+            <label for="yep">sim</label>
+            <input type="radio" id="yep" name="coffee" value="yes">
+
+            <label for="nop">não</label>
+            <input type="radio" id="nop" name="coffee">
+        </fieldset>
+        <label for="text">Mensagem</label>
+        <textarea id="text" cols="15" rows="" placeholder="Digite sua mensagem"></textarea>
+        <label for="carsel">Qual o Modelo do carro</label>
+        <select name="" id="carsel" multiple size="3">
+            <option value="">Selecione </option>
+            <option value="fiat">Uno</option>
+            <option value="audi">A3</option>
+        </select>
+        <label for="pets">Please choose one or more pets:</label>
+        <select name="pets" id="pets" multiple size="4">
+            <optgroup label="4-legged pets">
+                <option value="dog">dog</option>
+                <option value="cat">cat</option>
+                <option value="hamster">hamster</option>
+            </optgroup>
+        </select>
+        <datalist id="searchterms">
+            <option>Mac</option>
+            <option>Win</option>
+            <option>Linux</option>
+        </datalist>
+        <form action="">
+            <input type="search" name="q" list="searchterms" placeholder="Digite seu termo de busca" size="24" aria-label="Digite seu termo de busca" title="Digite somente caracteres">
+            <button>Search</button>
+        </form>
+        <form action="">
+            <input type="number" min="2" max="50" step="5">
+            <button>Enviar</button>
+        </form>
+        <input type="range" min="1" max="100" value="30" step="5">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="time">
+        <input type="week">-->
+        <form action="">
+        <fieldset>
+            <legend>Contact</legend>
+            <div>
+                <p><label for="name">Name:</label></p>
+                <input type="text" size="20" id="name" placeholder="Digite o nome completo">
+            </div>
+            <div>
+                <p><label for="email">Email:</label></p>
+                <input type="email" name="email" size="20" id="email" placeholder="Formato:email@gmail.com">
+            </div>
+            <div>
+                <p><label for="message">Mensagem</label></p>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+            </div>
+            <p><button type="submit">Send</button></p>
+        </fieldset>
+    </form>
+</body>
+</html>

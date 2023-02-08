@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html/*root*/{
+            font-size: 100%;
+        }
+        body{
+            height: 100vh;
+        }
+        div{
+            font-size: 32px;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+        .box{
+            height: calc(100% - 40px);
+            width: 400px;
+            background-image: url(./Files.html/img.png);
+            background-repeat: no-repeat;
+            background-position: right 20px;
+            margin: 20px;
+            box-shadow: 10px;
+        }
+        .box::after{
+            content: "Aqui vem alguma mensagem";
+            
+        }
+        /*top, right, bottom, left e center*/
+    </style>
+</head>
+<body>
+    <!--A diferença entre absoluta e relativa vai estar na adaptação da relativa em relação a tag "Pai"-->
+    <div class="box">
+        <p></p>
+    </div>
+
+</body>
+</html>

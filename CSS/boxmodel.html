@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 70px;
+            border: 1px solid red;
+            margin: 10%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        span{
+            width: 100px;
+            height: 70px;
+            border: red solid 10px;
+            display: block;
+            margin: auto;
+            padding: 50px;
+            box-sizing: border-box;
+            /*margin: top right bottom left
+            margin: top side bottom
+            margin: top/bottom side
+            margin: all sides
+            */
+            outline: yellowgreen solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <!--Box model:
+    1)Tamanho:width/height
+    2)Conteúdo:Content
+    3)Bordas:Border
+    4)Preenchimento interno:padding
+    5)Espaços fora da caixa:margin-->
+    <div>
+        Testando box model
+    </div>
+    <span>
+        inline<!--O inline respeita apenas valores horizontais commo margin, padding e border-->
+    </span>
+</body>
+</html>
